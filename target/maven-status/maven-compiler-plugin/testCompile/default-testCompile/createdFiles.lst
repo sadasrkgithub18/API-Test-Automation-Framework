@@ -1,0 +1,4 @@
+com\nagarro\resources\Utils.class
+com\nagarro\resources\APIResURIS.class
+com\nagarro\stepDefinitions\StepDefination.class
+com\nagarro\runners\TestRunner.class

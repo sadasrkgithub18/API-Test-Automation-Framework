@@ -1,0 +1,296 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-09T12:52:34.448Z",
+        "line": 5,
+        "name": "Verify the status code for a get request",
+        "description": "",
+        "id": "get-request-calls;verify-the-status-code-for-a-get-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4558800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on home page to check the status code",
+            "match": {
+              "location": "StepDefination.user_is_on_home_page_to_check_the_status_code()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3171254600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user calls GetRequestAPI with GET http method",
+            "match": {
+              "location": "StepDefination.user_calls_with_http_method()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4489600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the API call got success with status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 52
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code_should_be(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetRequest"
+          },
+          {
+            "name": "@StatusCode"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-09T12:52:37.656Z",
+        "line": 11,
+        "name": "Verify the first name for the user id 10",
+        "description": "",
+        "id": "get-request-calls;verify-the-first-name-for-the-user-id-10",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 876000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user is on home page to check the firstname",
+            "match": {
+              "location": "StepDefination.user_is_on_home_page_to_check_the_firstname()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 334441700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user calls GetRequestAPI with GET http method",
+            "match": {
+              "location": "StepDefination.user_calls_with_http_method()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 708856500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the firstname for user id 10 should be \"Byron\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Byron\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefination.the_for_user_id_should_be(int,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetRequest"
+          },
+          {
+            "name": "@FirstName"
+          }
+        ]
+      }
+    ],
+    "name": "GET Request Calls",
+    "description": "",
+    "id": "get-request-calls",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/nagarro/features/GetRequest.feature",
+    "tags": [
+      {
+        "name": "@GetRequest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-09T12:52:38.705Z",
+        "line": 5,
+        "name": "Verify the status code for a post request",
+        "description": "",
+        "id": "post-request-calls;verify-the-status-code-for-a-post-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1016400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on home page to check the status code during post request",
+            "match": {
+              "location": "StepDefination.user_is_on_home_page_to_check_the_status_code_during_post_request()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1475281400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user calls PostRequestAPI with POST http method",
+            "match": {
+              "location": "StepDefination.user_calls_PostRequestAPI_with_POST_http_method()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1794100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the API call got success with status code for post request should be 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 69
+                }
+              ],
+              "location": "StepDefination.the_API_call_got_success_with_status_code_for_post_request_should_be(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PostRequest"
+          },
+          {
+            "name": "@StatusCode"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-09T12:52:40.200Z",
+        "line": 11,
+        "name": "Verify that ID is generated or not when we do POST Request",
+        "description": "",
+        "id": "post-request-calls;verify-that-id-is-generated-or-not-when-we-do-post-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 525900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user is on home page to check the ID during POST request",
+            "match": {
+              "location": "StepDefination.user_is_on_home_page_to_check_the_ID_during_POST_request()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 694324400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user calls PostRequestAPI with POST http method",
+            "match": {
+              "location": "StepDefination.user_calls_PostRequestAPI_with_POST_http_method()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33273500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the API call output should contain ID field",
+            "match": {
+              "location": "StepDefination.the_API_call_output_should_contain_ID_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5577100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify the response JSON scheme",
+            "match": {
+              "location": "StepDefination.verify_the_response_JSON_scheme()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PostRequest"
+          },
+          {
+            "name": "@IDCheckAndSchemeheck"
+          }
+        ]
+      }
+    ],
+    "name": "POST Request Calls",
+    "description": "",
+    "id": "post-request-calls",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/nagarro/features/PostRequest.feature",
+    "tags": [
+      {
+        "name": "@PostRequest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
